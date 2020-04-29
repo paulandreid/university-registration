@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab3.controller.RegistrationSystem">
+   <children>
+      <GridPane fx:id="gridPane" layoutX="11.0" layoutY="25.0" prefHeight="550.0" prefWidth="933.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="235.1999755859375" minWidth="0.0" prefWidth="0.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="828.2" minWidth="10.0" prefWidth="828.2" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="204.2000244140625" minWidth="10.0" prefWidth="19.20001220703125" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="391.20000000000005" minHeight="10.0" prefHeight="391.20000000000005" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="113.59998168945316" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="78.0" prefWidth="218.0" text="School Registry" GridPane.columnIndex="1">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <SplitPane dividerPositions="0.49689440993788825" prefHeight="358.0" prefWidth="709.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="145.0" prefWidth="150.0">
+                     <children>
+                        <VBox layoutX="9.0" layoutY="5.0" prefHeight="376.0" prefWidth="378.0">
+                           <children>
+                              <HBox prefHeight="48.0" prefWidth="262.0">
+                                 <children>
+                                    <Button fx:id="studentBtt" mnemonicParsing="false" onAction="#studentBtt" text="Students" />
+                                    <TextField fx:id="studentIdField" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="teacherBtt" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#teacherBtt" text="Teachers" />
+                        <TextField fx:id="teacherIdField" layoutX="77.0" layoutY="14.0" />
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

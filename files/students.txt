@@ -1,0 +1,7 @@
+1;Paul;Andrei;21;4,2,3,1,
+2;Tudor;Vladimirescu;5;4,2,
+3;Radu;Porta;28;4,3,5,
+4;Daniela;Pop;3;2,
+10;Teo;Bratianu;20;5,
+101;S1;S2;3;100,
+100;red;moskow;0;-
